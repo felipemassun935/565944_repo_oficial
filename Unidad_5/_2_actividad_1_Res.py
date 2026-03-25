@@ -6,7 +6,7 @@ try:
     print("Bienvenidos!") 
     while  True:
         nombre = input("Ingrese el nombre de un estudiante: ")
-        if len(nombre) > 10 :
+        if len(nombre) > 10 or nombre.strip() == "":
             print("No es nombre!")
             nombre = input("Ingrese el nombre de un estudiante: ")
         if nombre == "salir":
